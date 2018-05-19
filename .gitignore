@@ -1,0 +1,7 @@
+eCommerce/.vs
+eCommerce/BusinessLayer/bin
+eCommerce/Console/bin
+eCommerce/Modele/bin
+eCommerce/UnitTest/bin
+eCommerce/Modele/Configuration/Database.mdf
+eCommerce/Modele/Configuration/Database_log.ldf
