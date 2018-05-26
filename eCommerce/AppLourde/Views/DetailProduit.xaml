@@ -20,6 +20,7 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Stretch" Background="AliceBlue" FontWeight="Bold">FICHE PRODUIT</Label>
+        <Button Grid.Column="3" Margin="5" Grid.Row="0" FontSize="12px" Command="{Binding UpdateProduit}" Height="Auto">Sauvegarder</Button>
 
         <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
             <Label>Code du produit</Label>
@@ -29,6 +30,6 @@
         </StackPanel>
 
         <Label Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="AliceBlue" FontWeight="Bold">DERNIERES OPERATIONS</Label>
-        <Button Grid.Column="3" Margin="5" Grid.Row="2" FontSize="12px" Command="{Binding AddOperation}">+</Button>
+        <Button Grid.Column="3" Margin="5" Grid.Row="2" FontSize="12px" Command="{Binding AddOperation}" Height="Auto">+</Button>
     </Grid>
 </UserControl>

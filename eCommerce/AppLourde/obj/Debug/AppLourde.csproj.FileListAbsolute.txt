@@ -29,3 +29,8 @@ C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\obj\Debug\AppLou
 C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\obj\Debug\AppLourde.csproj.GenerateResource.Cache
 C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\obj\Debug\AppLourde.exe
 C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\obj\Debug\AppLourde.pdb
+C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\bin\Debug\MaterialDesignColors.dll
+C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\gumariot\Documents\PROJETC#\projet\eCommerce\AppLourde\obj\Debug\App.baml

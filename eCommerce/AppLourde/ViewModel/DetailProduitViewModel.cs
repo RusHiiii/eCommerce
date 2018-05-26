@@ -1,4 +1,6 @@
-﻿using AppLourde.ViewModel.common;
+﻿using AppLourde.Converter;
+using AppLourde.ViewModel.common;
+using BusinessLayer;
 using Modele.Entities.Entity;
 using System;
 using System.Collections.Generic;
@@ -23,10 +25,12 @@ namespace AppLourde.ViewModel
         private int _productCategoryId;
         //private Category _productCategory;
 
-        private RelayCommand _addOperation;
+        private RelayCommand _updateProduit;
+        private BusinessManager bll;
 
         public DetailProduitViewModel(Products p)
         {
+            this.bll = BusinessManager.Instance;
             this._productId = p.ProductId;
             this._productCode = p.ProductCode;
             this._productLabel = p.ProductLabel;
@@ -91,24 +95,25 @@ namespace AppLourde.ViewModel
             set { _productCategoryId = value; }
         }
 
-        /*
-        public ICommand AddOperation
+        
+        public ICommand UpdateProduit
         {
             get
             {
-                if (_addOperation == null)
-                    _addOperation = new RelayCommand(() => this.ShowWindowOperation());
-                return _addOperation;
+                if (_updateProduit == null)
+                    _updateProduit = new RelayCommand(() => this.UpdateProductData());
+                return _updateProduit;
             }
         }
         
-        private void ShowWindowOperation()
+        private void UpdateProductData()
         {
-            Views.Operation operationWindow = new Views.Operation();
-            operationWindow.DataContext = this;
-            operationWindow.ShowDialog();
+            //Views.Operation operationWindow = new Views.Operation();
+            //operationWindow.DataContext = this;
+            //operationWindow.ShowDialog();
+            bll.ModifierProduit(ConvertProduct.ConvertProductVM2Product(this));
         }
-        */
+        
 
     }
 }

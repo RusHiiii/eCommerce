@@ -15,7 +15,7 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Margin="5px" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+        <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="70px" Header="Code" DisplayMemberBinding="{Binding ProductCode}" />
