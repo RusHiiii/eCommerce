@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="AppLourde.Views.ListeProduit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:AppLourde.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250px"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Margin="5px" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="70px" Header="Code" DisplayMemberBinding="{Binding ProductCode}" />
+                    <GridViewColumn Width="160px" Header="Nom" DisplayMemberBinding="{Binding ProductLabel}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <my:DetailProduit DataContext="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</UserControl>

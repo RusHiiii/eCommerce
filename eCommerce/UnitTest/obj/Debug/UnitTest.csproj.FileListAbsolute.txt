@@ -1,0 +1,16 @@
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\Configuration\Database.mdf
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\Configuration\Database_log.ldf
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\UnitTest.dll.config
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\Modele.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\Modele.pdb
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\fldamiens\Documents\projet\eCommerce\UnitTest\obj\Debug\UnitTest.pdb

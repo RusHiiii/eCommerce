@@ -18,6 +18,7 @@ namespace Modele.Entities.EntityFluent
             Property(log=> log.LogId).HasColumnName("LOG_ID").IsRequired();
             Property(log => log.LogMessage).HasColumnName("LOG_MESSAGE").HasMaxLength(255);
             Property(log => log.LogDate).HasColumnName("LOG_DATE").IsRequired();
+            Property(log => log.LogProductEntityId).HasColumnName("LOG_PRODUITID").IsRequired();
 
             HasRequired(log => log.LogProductEntity).WithMany().HasForeignKey(log => log.LogProductEntityId);
         }

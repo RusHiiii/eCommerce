@@ -68,11 +68,15 @@
     <Compile Include="Entities\EntityFluent\CategoryFluent.cs" />
     <Compile Include="Entities\EntityFluent\ClientFluent.cs" />
     <Compile Include="Entities\EntityFluent\LogProductFluent.cs" />
+    <Compile Include="Entities\EntityFluent\OrderFluent.cs" />
+    <Compile Include="Entities\EntityFluent\OrderProductFluent.cs" />
     <Compile Include="Entities\EntityFluent\ProductsFluent.cs" />
     <Compile Include="Entities\EntityFluent\StatusFluent.cs" />
     <Compile Include="Entities\Entity\Category.cs" />
     <Compile Include="Entities\Entity\Client.cs" />
     <Compile Include="Entities\Entity\LogProduct.cs" />
+    <Compile Include="Entities\Entity\Order.cs" />
+    <Compile Include="Entities\Entity\OrderProduct.cs" />
     <Compile Include="Entities\Entity\Products.cs" />
     <Compile Include="Entities\Entity\Status.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

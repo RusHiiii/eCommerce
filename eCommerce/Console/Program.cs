@@ -12,7 +12,7 @@ namespace Console
         static void Main(string[] args)
         {
             Context c = new Context();
-            c.Clients.ToList();
+            c.OrdersProduct.ToList();
         }
     }
 }
