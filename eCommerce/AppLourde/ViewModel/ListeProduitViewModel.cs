@@ -1,4 +1,5 @@
-﻿using AppLourde.ViewModel.common;
+﻿using AppLourde.Converter;
+using AppLourde.ViewModel.common;
 using BusinessLayer;
 using Modele;
 using Modele.Entities.Entity;
@@ -8,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace AppLourde.ViewModel
 {
@@ -18,6 +20,7 @@ namespace AppLourde.ViewModel
         private DetailProduitViewModel _selectedProduit;
         private String _productFilter;
         private BusinessManager bll;
+        private RelayCommand _suppProduit;
 
         public ListeProduitViewModel()
         {
@@ -69,6 +72,23 @@ namespace AppLourde.ViewModel
                 _selectedProduit = value;
                 OnPropertyChanged("SelectedProduit");
             }
+        }
+
+        public ICommand SuppProduit
+        {
+            get
+            {
+                if (_suppProduit == null)
+                    _suppProduit = new RelayCommand(() => this.SuppProductData());
+                return _suppProduit;
+            }
+        }
+
+        private void SuppProductData()
+        {
+            bll.SupprimerProduit(ConvertProduct.ConvertProductVM2Product(_selectedProduit).ProductId);
+            _produits.Remove(_selectedProduit);
+            OnPropertyChanged("Produits");
         }
 
     }

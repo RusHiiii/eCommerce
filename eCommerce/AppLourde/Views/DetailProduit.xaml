@@ -30,6 +30,5 @@
         </StackPanel>
 
         <Label Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="AliceBlue" FontWeight="Bold">AUTRES</Label>
-        <Button Grid.Column="3" Margin="5" Grid.Row="2" FontSize="12px" Command="{Binding SuppProduit}" Height="Auto">Supprimer</Button>
     </Grid>
 </UserControl>

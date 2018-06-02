@@ -16,7 +16,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel>
             <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
-                <Label HorizontalAlignment="Center">label</Label>
+                <Label HorizontalAlignment="Center">Filtre</Label>
                 <TextBox Text="{Binding FilterProduct, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             </StackPanel>
             <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
@@ -27,6 +27,10 @@
                     </GridView>
                 </ListView.View>
             </ListView>
+            <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
+                <Label HorizontalAlignment="Center">Options</Label>
+                <Button Command="{Binding FilterProduct, UpdateSourceTrigger=PropertyChanged}" >Supprimer</Button>
+            </StackPanel>
         </StackPanel>
 
         <my:DetailProduit DataContext="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1"/>
