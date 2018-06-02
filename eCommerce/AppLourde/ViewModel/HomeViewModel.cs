@@ -20,7 +20,9 @@ namespace AppLourde.ViewModel
         public ListeProduitViewModel ListeProduitViewModel
         {
             get { return _listeProduitViewModel; }
-            set { _listeProduitViewModel = value; }
+            set {
+                _listeProduitViewModel = value;
+            }
         }
 
     }

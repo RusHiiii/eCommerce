@@ -26,5 +26,16 @@ namespace BusinessLayer.Queries
         {
             return _contexte.Products.Where(p => p.ProductId == id);
         }
+
+        internal int Stockproduit(string code)
+        {
+            int res = _contexte.Products.Where(p => p.ProductCode == code).Select(p => p.ProductStock).FirstOrDefault();
+            return res;
+        }
+
+        internal IQueryable<Products> filterProducts(string filter)
+        {
+            return _contexte.Products.Where(p => p.ProductLabel.StartsWith(filter));
+        }
     }
 }

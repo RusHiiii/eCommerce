@@ -37,10 +37,28 @@ namespace BusinessLayer
             return pq.GetAll().ToList();
         }
 
+        public List<Products> filterProduct(string filter)
+        {
+            ProduitQuery pq = new ProduitQuery(contexte);
+            return pq.filterProducts(filter).ToList();
+        }
+
+        public List<Order> GetOrder()
+        {
+            OrderQuery pc = new OrderQuery(contexte);
+            return pc.getAllOrder();
+        }
+
         public int AjouterProduit(Products p)
         {
             ProduitCommand pc = new ProduitCommand(contexte);
             return pc.Ajouter(p);
+        }
+
+        public int StockProduit(String code)
+        {
+            ProduitQuery pc = new ProduitQuery(contexte);
+            return pc.Stockproduit(code);
         }
 
         public void ModifierProduit(Products p)

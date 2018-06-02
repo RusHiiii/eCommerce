@@ -26,6 +26,7 @@ namespace AppLourde.ViewModel
         //private Category _productCategory;
 
         private RelayCommand _updateProduit;
+        private RelayCommand _suppProduit;
         private BusinessManager bll;
 
         public DetailProduitViewModel(Products p)
@@ -51,7 +52,10 @@ namespace AppLourde.ViewModel
         public string ProductCode
         {
             get { return _productCode; }
-            set { _productCode = value; }
+            set {
+                _productCode = value;
+                OnPropertyChanged("ProductCode");
+            }
         }
         public string ProductLabel
         {
@@ -108,12 +112,24 @@ namespace AppLourde.ViewModel
         
         private void UpdateProductData()
         {
-            //Views.Operation operationWindow = new Views.Operation();
-            //operationWindow.DataContext = this;
-            //operationWindow.ShowDialog();
             bll.ModifierProduit(ConvertProduct.ConvertProductVM2Product(this));
         }
-        
 
+        public ICommand SuppProduit
+        {
+            get
+            {
+                if (_suppProduit == null)
+                    _suppProduit = new RelayCommand(() => this.SuppProductData());
+                return _suppProduit;
+            }
+        }
+
+        private void SuppProductData()
+        {
+            bll.SupprimerProduit(ConvertProduct.ConvertProductVM2Product(this).ProductId);
+            OnPropertyChanged("Produits");
+            OnPropertyChanged("SelectedProduit");
+        }
     }
 }

@@ -14,15 +14,20 @@
             <ColumnDefinition Width="250px"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
-        <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="70px" Header="Code" DisplayMemberBinding="{Binding ProductCode}" />
-                    <GridViewColumn Width="160px" Header="Nom" DisplayMemberBinding="{Binding ProductLabel}" />
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+                <Label HorizontalAlignment="Center">label</Label>
+                <TextBox Text="{Binding FilterProduct, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            </StackPanel>
+            <ListView Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="70px" Header="Code" DisplayMemberBinding="{Binding ProductCode}" />
+                        <GridViewColumn Width="160px" Header="Nom" DisplayMemberBinding="{Binding ProductLabel}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
 
         <my:DetailProduit DataContext="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1"/>
     </Grid>

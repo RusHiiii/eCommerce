@@ -53,18 +53,18 @@
     <Compile Include="Commands\ProductCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\CategoryQuery.cs" />
+    <Compile Include="Queries\OrderQuery.cs" />
     <Compile Include="Queries\ProductQuery.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modele\Modele.csproj">
-      <Project>{BF1F4BA1-B8AA-4F41-9D13-F84F291F844C}</Project>
-      <Name>Modele</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modele\Modele.csproj">
+      <Project>{bf1f4ba1-b8aa-4f41-9d13-f84f291f844c}</Project>
+      <Name>Modele</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

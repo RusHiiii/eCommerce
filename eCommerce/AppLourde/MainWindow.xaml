@@ -15,7 +15,7 @@
         </Grid.ColumnDefinitions>
         <DockPanel Grid.RowSpan="2">
             <Label Foreground="Blue" DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="26" >Mon Application</Label>
-            <my:ListeProduit DockPanel.Dock="Left" Grid.Row="1" DataContext="{Binding ListeProduitViewModel}"></my:ListeProduit>
+            <my:ListeProduit DockPanel.Dock="Left" Grid.Row="1" DataContext="{Binding ListeProduitViewModel}" Loaded="ListeProduit_Loaded"></my:ListeProduit>
         </DockPanel>
     </Grid>
     

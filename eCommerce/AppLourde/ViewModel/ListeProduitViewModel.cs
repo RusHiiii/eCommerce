@@ -16,10 +16,12 @@ namespace AppLourde.ViewModel
 
         private ObservableCollection<DetailProduitViewModel> _produits = null;
         private DetailProduitViewModel _selectedProduit;
+        private String _productFilter;
+        private BusinessManager bll;
 
         public ListeProduitViewModel()
         {
-            BusinessManager bll = BusinessManager.Instance;
+            bll = BusinessManager.Instance;
             _produits = new ObservableCollection<DetailProduitViewModel>();
             foreach (Products p in bll.GetAllProduit())
             {
@@ -29,10 +31,26 @@ namespace AppLourde.ViewModel
             if (_produits != null && _produits.Count > 0)
                 _selectedProduit = _produits.ElementAt(0);
         }
-        
+        public String FilterProduct
+        {
+            get { return _productFilter; }
+            set {
+                _productFilter = value;
+                _produits.Clear();
+                foreach (Products p in bll.filterProduct(_productFilter))
+                {
+                    _produits.Add(new DetailProduitViewModel(p));
+                }
+                OnPropertyChanged("Produits");
+            }
+        }
+
+
         public ObservableCollection<DetailProduitViewModel> Produits
         {
-            get { return _produits; }
+            get {
+                return _produits;
+            }
             set
             {
                 _produits = value;
@@ -42,13 +60,16 @@ namespace AppLourde.ViewModel
 
         public DetailProduitViewModel SelectedProduit
         {
-            get { return _selectedProduit; }
+            get
+            {
+                return _selectedProduit;
+            }
             set
             {
                 _selectedProduit = value;
                 OnPropertyChanged("SelectedProduit");
             }
         }
-        
+
     }
 }

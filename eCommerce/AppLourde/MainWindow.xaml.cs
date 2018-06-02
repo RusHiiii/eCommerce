@@ -26,5 +26,10 @@ namespace AppLourde
             InitializeComponent();
             this.DataContext = new HomeViewModel();
         }
+
+        private void ListeProduit_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
