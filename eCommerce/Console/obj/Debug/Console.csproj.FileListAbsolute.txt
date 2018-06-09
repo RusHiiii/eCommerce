@@ -43,8 +43,6 @@ C:\Users\fldamiens\Desktop\Web\eCommerce\eCommerce\Console\bin\Debug\Configurati
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Console.exe.config
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\obj\Debug\Console.exe
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\obj\Debug\Console.pdb
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Configuration\Database.mdf
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Configuration\Database_log.ldf
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Console.exe
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Console.pdb
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\EntityFramework.dll
@@ -54,3 +52,5 @@ C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Modele.pdb
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\EntityFramework.xml
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache
+C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Configuration\Database.mdf
+C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Console\bin\Debug\Configuration\Database_log.ldf

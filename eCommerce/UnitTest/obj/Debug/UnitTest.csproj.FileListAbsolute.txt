@@ -30,8 +30,6 @@ C:\Users\fldamiens\Desktop\Web\eCommerce\eCommerce\UnitTest\obj\Debug\UnitTest.d
 C:\Users\fldamiens\Desktop\Web\eCommerce\eCommerce\UnitTest\obj\Debug\UnitTest.pdb
 C:\Users\fldamiens\Desktop\Web\eCommerce\eCommerce\UnitTest\bin\Debug\Configuration\Database.mdf
 C:\Users\fldamiens\Desktop\Web\eCommerce\eCommerce\UnitTest\bin\Debug\Configuration\Database_log.ldf
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\UnitTest\bin\Debug\Configuration\Database.mdf
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\UnitTest\bin\Debug\Configuration\Database_log.ldf
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\UnitTest\bin\Debug\UnitTest.dll.config
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\UnitTest\bin\Debug\UnitTest.dll
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\UnitTest\bin\Debug\UnitTest.pdb

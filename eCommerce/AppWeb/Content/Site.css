@@ -22,3 +22,43 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.stdButton{
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  width: 35%;
+  justify-content: space-around;
+  text-decoration: none;
+  display: flex;
+}
+
+.deleteButton{
+  color: #FFF;
+  background: #e74c3c;
+}
+.deleteButton:hover{
+  background: #c0392b;
+  text-decoration: none;
+  color: white;
+}
+
+.detailButton{
+  color: #FFF;
+  background: #3e71bf;
+}
+.detailButton:hover{
+  background: #2d67bf;
+  text-decoration: none;
+  color: white;
+}
+
+.flex-div{
+  justify-content: space-around;
+  display: flex;
+}

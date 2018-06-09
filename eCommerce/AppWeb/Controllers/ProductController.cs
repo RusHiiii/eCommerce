@@ -27,7 +27,8 @@ namespace AppWeb.Controllers
         // GET: Product/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            ProduitModels product = new ProduitModels(bll.GetProduct(id));
+            return View("Details", product);
         }
 
         // GET: Product/Create
@@ -77,7 +78,8 @@ namespace AppWeb.Controllers
         // GET: Product/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            bll.SupprimerProduit(id);
+            return RedirectToAction("Index");
         }
 
         // POST: Product/Delete/5

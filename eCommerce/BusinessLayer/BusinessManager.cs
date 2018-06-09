@@ -49,6 +49,12 @@ namespace BusinessLayer
             return pc.getAllOrder();
         }
 
+        public Products GetProduct(int id)
+        {
+            ProduitQuery pc = new ProduitQuery(contexte);
+            return pc.GetByID(id).Single();
+        }
+
         public int AjouterProduit(Products p)
         {
             ProduitCommand pc = new ProduitCommand(contexte);

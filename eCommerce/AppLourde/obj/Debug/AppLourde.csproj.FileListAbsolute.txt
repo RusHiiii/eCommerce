@@ -104,5 +104,3 @@ C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\obj\Debug\Views\ListePr
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\obj\Debug\AppLourde.g.resources
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\obj\Debug\AppLourde.Properties.Resources.resources
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\obj\Debug\AppLourde.csproj.GenerateResource.Cache
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\bin\Debug\Configuration\Database.mdf
-C:\Users\fldamiens\Desktop\eCommerce\eCommerce\AppLourde\bin\Debug\Configuration\Database_log.ldf

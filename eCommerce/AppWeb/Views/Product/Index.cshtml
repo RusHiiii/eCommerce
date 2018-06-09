@@ -2,15 +2,35 @@
 @{
     ViewBag.Title = "List of products";
 }
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 
-<ul>
-    @foreach (var prod in @Model.Products)
-    {
-        <li>@prod.ProductCode</li>
-        <li>@prod.ProductLabel</li>
-        <li>@prod.ProductPrice</li>
-        <li>@prod.ProductStock</li>
-        <li>@prod.ProductDescription</li>
-    }
-</ul>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Label</th>
+            <th scope="col">Price</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prod in @Model.Products)
+        {
+            <tr>
+                <th scope="row">@prod.ProductCode</th>
+                <td>@prod.ProductLabel</td>
+                <td>@prod.ProductPrice</td>
+                <td>@prod.ProductStock</td>
+                <td>@prod.ProductDescription</td>
+                <td>
+                    <div class="flex-div">
+                        @Html.ActionLink("Supprimer", "Delete", "Product", new { id = prod.ProductId }, new { @class = "stdButton deleteButton" })
+                        @Html.ActionLink("Détail", "Details", "Product", new { id = prod.ProductId }, new { @class = "stdButton detailButton" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
