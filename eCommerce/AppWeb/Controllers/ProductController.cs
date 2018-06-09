@@ -66,7 +66,7 @@ namespace AppWeb.Controllers
             try
             {
                 // TODO: Add update logic here
-
+                FormCollection c = collection;
                 return RedirectToAction("Index");
             }
             catch
