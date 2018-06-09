@@ -1,0 +1,16 @@
+﻿@model AppWeb.Models.ProduitListModel
+@{
+    ViewBag.Title = "List of products";
+}
+<h2>@ViewBag.Title.</h2>
+
+<ul>
+    @foreach (var prod in @Model.Products)
+    {
+        <li>@prod.ProductCode</li>
+        <li>@prod.ProductLabel</li>
+        <li>@prod.ProductPrice</li>
+        <li>@prod.ProductStock</li>
+        <li>@prod.ProductDescription</li>
+    }
+</ul>
