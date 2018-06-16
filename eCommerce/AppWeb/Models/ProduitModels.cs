@@ -26,6 +26,8 @@ namespace AppWeb.Models
             this._productPrice = p.ProductPrice;
         }
 
+        public ProduitModels() { }
+
         public int ProductId
         {
             get { return _productId; }
@@ -45,8 +47,8 @@ namespace AppWeb.Models
 
         public string ProductDescription
         {
-            get { return _productCode; }
-            set { _productCode = value; }
+            get { return _productDescription; }
+            set { _productDescription = value; }
         }
 
         public int ProductStock

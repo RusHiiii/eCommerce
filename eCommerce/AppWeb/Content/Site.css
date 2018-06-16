@@ -62,3 +62,7 @@ textarea {
   justify-content: space-around;
   display: flex;
 }
+
+.form-control{
+    margin-bottom: 1em;
+}

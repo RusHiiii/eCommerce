@@ -1,4 +1,5 @@
-﻿using AppWeb.Models;
+﻿using AppWeb.Converter;
+using AppWeb.Models;
 using BusinessLayer;
 using Modele.Entities.Entity;
 using Service;
@@ -39,17 +40,18 @@ namespace AppWeb.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(ProduitModels p)
         {
             try
             {
-                // TODO: Add insert logic here
-
+                    Products toCreate = ConvertProduct.ConvertProductModel2ProductNotFull(p);
+                    bll.AjouterProduit(toCreate);
+                
                 return RedirectToAction("Index");
             }
-            catch
+            catch (Exception e)
             {
-                return View();
+                return RedirectToAction("Index");
             }
         }
 
@@ -61,17 +63,20 @@ namespace AppWeb.Controllers
 
         // POST: Product/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(ProduitModels p)
         {
             try
             {
-                // TODO: Add update logic here
-                FormCollection c = collection;
+                Products product = bll.GetProduct(p.ProductId);
+                if (ModelState.IsValid)
+                {
+                    Products toUpdate = ConvertProduct.ConvertProductModel2Product(p, product);
+                    bll.ModifierProduit(toUpdate);
+                }
                 return RedirectToAction("Index");
-            }
-            catch
+            }catch(Exception e)
             {
-                return View();
+                return RedirectToAction("Index");
             }
         }
 

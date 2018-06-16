@@ -4,40 +4,48 @@
 }
 <h2>@ViewBag.Title</h2>
 
-<form class="form-horizontal" method="post" action="/Product/Edit/@Model.ProductId">
+@using (Html.BeginForm("Edit","Product",FormMethod.Post))
+{
+    @Html.ValidationSummary(true,"Echec de la modification du produit")
     <div class="form-group">
         <label class="col-sm-2 control-label">Code</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Code" name="code" value="@Model.ProductCode">
+            <!--<input type="text" class="form-control" placeholder="Code" name="code" value="@Model.ProductCode">-->
+            @Html.TextBoxFor(m => m.ProductCode, new { @class = "form-control" })
         </div>
-    </div>
+    </div><br />
     <div class="form-group">
         <label class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Name" name="Name" value="@Model.ProductLabel">
+            <!-- <input type="text" class="form-control" placeholder="Name" name="Name" value="@Model.ProductLabel"> -->
+            @Html.TextBoxFor(m => m.ProductLabel, new { @class = "form-control" })
         </div>
-    </div>
+    </div><br />
     <div class="form-group">
         <label class="col-sm-2 control-label">Price</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Price" name="Price" value="@Model.ProductPrice">
+            <!-- <input type="text" class="form-control" placeholder="Price" name="Price" value="@Model.ProductPrice"> -->
+            @Html.TextBoxFor(m => m.ProductPrice, new { @class = "form-control" })
         </div>
-    </div>
+    </div><br />
     <div class="form-group">
         <label class="col-sm-2 control-label">Stock</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Stock" name="Stock" value="@Model.ProductStock">
+            <!-- <input type="text" class="form-control" placeholder="Stock" name="Stock" value="@Model.ProductStock"> -->
+            @Html.TextBoxFor(m => m.ProductStock, new { @class = "form-control" })
         </div>
-    </div>
+    </div><br />
     <div class="form-group">
         <label class="col-sm-2 control-label">Description</label>
         <div class="col-sm-10">
-            <textarea placeholder="Description" class="form-control" name="Description" rows="3">@Model.ProductDescription</textarea>
+            <!-- <textarea placeholder="Description" class="form-control" name="Description" rows="3">@Model.ProductDescription</textarea> -->
+            @Html.TextBoxFor(m => m.ProductDescription, new { @class = "form-control" })
         </div>
-    </div>
+    </div><br />
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Modifier</button>
+            @Html.TextBoxFor(m => m.ProductId, new { @class = "hidden" })
+            <input type="submit" class="btn btn-default" value="Modifier" />
         </div>
     </div>
-</form>
+}

@@ -19,6 +19,7 @@ namespace BusinessLayer.Commands
         
         public int Ajouter(Products p)
         {
+            p.ProductId = 12;
             _contexte.Products.Add(p);
             return _contexte.SaveChanges();
         }
@@ -30,6 +31,13 @@ namespace BusinessLayer.Commands
             {
                 upPrd.ProductLabel = p.ProductLabel;
                 upPrd.ProductCategoryId = p.ProductCategoryId;
+                upPrd.ProductActive = p.ProductActive;
+                upPrd.ProductCategory = p.ProductCategory;
+                upPrd.ProductCode = p.ProductCode;
+                upPrd.ProductStock = p.ProductStock;
+                upPrd.ProductDescription = p.ProductDescription;
+                upPrd.ProductPrice = p.ProductPrice;
+                upPrd.ProductStockBuffer = p.ProductStockBuffer;
             }
             _contexte.SaveChanges();
         }
