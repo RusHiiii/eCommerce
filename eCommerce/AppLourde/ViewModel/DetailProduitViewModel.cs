@@ -18,10 +18,10 @@ namespace AppLourde.ViewModel
         private string _productCode;
         private string _productLabel;
         private string _productDescription;
-        private bool _productActive;
+        private bool? _productActive;
         private int _productStock;
         private float _productPrice;
-        private int _productStockBuffer;
+        private int? _productStockBuffer;
         private int _productCategoryId;
         //private Category _productCategory;
 
@@ -70,7 +70,7 @@ namespace AppLourde.ViewModel
             get { return _productCode; }
             set { _productCode = value; }
         }
-        public bool ProductActive
+        public bool? ProductActive
         {
             get { return _productActive; }
             set { _productActive = value; }
@@ -87,7 +87,7 @@ namespace AppLourde.ViewModel
             set { _productPrice = value; }
         }
 
-        public int ProductStockBuffer
+        public int? ProductStockBuffer
         {
             get { return _productStockBuffer; }
             set { _productStockBuffer = value; }

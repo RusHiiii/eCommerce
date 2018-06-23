@@ -19,11 +19,11 @@ namespace Modele.Entities.EntityFluent
             Property(pr => pr.ProductCode).HasColumnName("PRD_CODE").HasMaxLength(255);
             Property(pr => pr.ProductLabel).HasColumnName("PRD_LIBELLE").IsRequired();
             Property(pr => pr.ProductDescription).HasColumnName("PRD_DESCRIPTION");
-            Property(pr => pr.ProductActive).HasColumnName("PRD_ACTIF").IsRequired(); ;
+            Property(pr => pr.ProductActive).HasColumnName("PRD_ACTIF").IsOptional();
             Property(pr => pr.ProductStock).HasColumnName("PRD_STOCK").IsRequired(); ;
             Property(pr => pr.ProductPrice).HasColumnName("PRD_PRIX").IsRequired(); ;
-            Property(pr => pr.ProductStockBuffer).HasColumnName("PRD_STOCK_BUFFER").IsRequired(); ;
-            Property(pr => pr.ProductCategoryId).HasColumnName("PRD_CATEGORIEID").IsRequired(); ;
+            Property(pr => pr.ProductStockBuffer).HasColumnName("PRD_STOCK_BUFFER").IsOptional();
+            Property(pr => pr.ProductCategoryId).HasColumnName("PRD_CATEGORIEID").IsRequired();
 
             HasRequired(pr => pr.ProductCategory).WithMany().HasForeignKey(pr => pr.ProductCategoryId);
         }

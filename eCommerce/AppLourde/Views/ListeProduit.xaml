@@ -29,7 +29,7 @@
             </ListView>
             <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
                 <Label HorizontalAlignment="Center">Options</Label>
-                <Button Command="{Binding FilterProduct, UpdateSourceTrigger=PropertyChanged}" >Supprimer</Button>
+                <Button Command="{Binding SuppProduit, UpdateSourceTrigger=PropertyChanged}" >Supprimer</Button>
             </StackPanel>
         </StackPanel>
 

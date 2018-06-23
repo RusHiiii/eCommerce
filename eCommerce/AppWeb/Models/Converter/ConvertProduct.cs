@@ -34,6 +34,7 @@ namespace AppWeb.Converter
             p.ProductDescription = m.ProductDescription;
             p.ProductStock = m.ProductStock;
             p.ProductPrice = m.ProductPrice;
+            p.ProductCategoryId = m.ProductCategorieId;
             return p;
         }
     }

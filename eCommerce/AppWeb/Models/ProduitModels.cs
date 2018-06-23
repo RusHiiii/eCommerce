@@ -15,6 +15,7 @@ namespace AppWeb.Models
         private string _productDescription;
         private int _productStock;
         private float _productPrice;
+        private int _productCategorieId;
 
         public ProduitModels(Products p)
         {
@@ -24,6 +25,7 @@ namespace AppWeb.Models
             this._productDescription = p.ProductDescription;
             this._productStock = p.ProductStock;
             this._productPrice = p.ProductPrice;
+            this._productCategorieId = p.ProductCategoryId;
         }
 
         public ProduitModels() { }
@@ -60,6 +62,12 @@ namespace AppWeb.Models
         {
             get { return _productPrice; }
             set { _productPrice = value; }
+        }
+
+        public int ProductCategorieId
+        {
+            get { return _productCategorieId; }
+            set { _productCategorieId = value; }
         }
 
     }

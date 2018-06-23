@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppWeb.Models;
+using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,11 @@ namespace AppWeb.Controllers
 {
     public class HomeController : Controller
     {
+        private BusinessManager bll = BusinessManager.Instance;
         public ActionResult Index()
         {
-            return View();
+            HomeModels data = new HomeModels(bll.GetAllProduit(), bll.GetFiveOrder());
+            return View("Index", data);
         }
         
 

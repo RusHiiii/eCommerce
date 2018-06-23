@@ -22,5 +22,10 @@ namespace BusinessLayer.Queries
         {
             return _contexte.Orders.ToList();
         }
+        internal List<Order> getFiveOrder()
+        {
+            return _contexte.Orders.Take(5).ToList();
+
+        }
     }
 }

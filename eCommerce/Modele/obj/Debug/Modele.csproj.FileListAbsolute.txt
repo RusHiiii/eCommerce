@@ -46,3 +46,15 @@ C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Modele.dll
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Modele.pdb
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Configuration\Database.mdf
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Configuration\Database_log.ldf
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Modele.dll.config
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Modele.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Modele.pdb
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\EntityFramework.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\EntityFramework.xml
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\obj\Debug\Modele.csprojResolveAssemblyReference.cache
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\obj\Debug\Modele.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\obj\Debug\Modele.pdb
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Configuration\Database.mdf
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\Modele\bin\Debug\Configuration\Database_log.ldf

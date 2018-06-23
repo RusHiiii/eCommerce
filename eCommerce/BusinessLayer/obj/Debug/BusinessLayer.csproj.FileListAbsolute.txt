@@ -45,3 +45,17 @@ C:\Users\fldamiens\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFra
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Configuration\Database.mdf
 C:\Users\fldamiens\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Configuration\Database_log.ldf
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Modele.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Modele.pdb
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Configuration\Database.mdf
+C:\Users\gumariot\Desktop\eCommerce\eCommerce\BusinessLayer\bin\Debug\Configuration\Database_log.ldf

@@ -37,6 +37,12 @@ namespace BusinessLayer
             return pq.GetAll().ToList();
         }
 
+        public List<Order> GetFiveOrder()
+        {
+            OrderQuery pq = new OrderQuery(contexte);
+            return pq.getFiveOrder().ToList();
+        }
+
         public List<Products> filterProduct(string filter)
         {
             ProduitQuery pq = new ProduitQuery(contexte);

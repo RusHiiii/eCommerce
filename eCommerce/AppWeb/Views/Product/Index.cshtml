@@ -2,9 +2,15 @@
 @{
     ViewBag.Title = "List of products";
 }
-<h2>@ViewBag.Title</h2>
 
-<table class="table table-striped">
+<div>
+    <h2>@ViewBag.Title</h2>
+    @Html.TextBox("ProductName", null, new { @class = "form-control" })  
+</div>
+
+
+
+<table class="table table-striped" id="listOfProducts">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -12,18 +18,20 @@
             <th scope="col">Price</th>
             <th scope="col">Stock</th>
             <th scope="col">Description</th>
+            <th scope="col">Categorie</th>
             <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var prod in @Model.Products)
         {
-            <tr>
+            <tr class="ProductRow">
                 <th scope="row">@prod.ProductCode</th>
-                <td>@prod.ProductLabel</td>
+                <td id="productLabel" value="@prod.ProductLabel">@prod.ProductLabel</td>
                 <td>@prod.ProductPrice</td>
                 <td>@prod.ProductStock</td>
                 <td>@prod.ProductDescription</td>
+                <td>@prod.ProductCategorieId</td>
                 <td>
                     <div class="flex-div">
                         @Html.ActionLink("Supprimer", "Delete", "Product", new { id = prod.ProductId }, new { @class = "stdButton deleteButton" })
